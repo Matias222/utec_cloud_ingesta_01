@@ -1,0 +1,22 @@
+[
+  {
+    "Name": "codigo_alumno",
+    "Type": "int"
+  },
+  {
+    "Name": "ciclo",
+    "Type": "string"
+  },
+  {
+    "Name": "codigo_curso",
+    "Type": "string"
+  },
+  {
+    "Name": "tipo_nota",
+    "Type": "string"
+  },
+  {
+    "Name": "nota",
+    "Type": "int"
+  }
+]

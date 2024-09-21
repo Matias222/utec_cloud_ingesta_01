@@ -1,0 +1,16 @@
+SELECT * FROM "universidad"."notas";
+
+SELECT b.codigo_alumno, a.first_name, a.last_name, b.ciclo, b.codigo_curso, b.tipo_nota, b.nota
+FROM "universidad"."alumnos" a, "universidad"."notas" b
+WHERE a.alumno_id = b.codigo_alumno
+ORDER BY b.codigo_alumno, b.tipo_nota;
+
+CREATE OR REPLACE VIEW view_notas_alumnos AS
+SELECT b.codigo_alumno, a.first_name, a.last_name, b.ciclo, b.codigo_curso, b.tipo_nota, b.nota
+FROM "universidad"."alumnos" a, "universidad"."notas" b
+WHERE a.alumno_id = b.codigo_alumno
+ORDER BY b.codigo_alumno, b.tipo_nota;
+
+SELECT * FROM "universidad"."view_notas_alumnos";
+
+
